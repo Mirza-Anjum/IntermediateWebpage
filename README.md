@@ -29,9 +29,14 @@ Through this project, I practiced and learned:
 
    
 🛠️ Technologies Used:
+
 HTML5 – Structure & semantics
 CSS3 – Styling, Flexbox, and Grid layout
 JavaScript (ES6) – Logic, interactivity, and validation
+
+🌟 Preview:
+You can host this on GitHub Pages for a live preview:
+👉  https://mirza-anjum.github.io/IntermediateWebpage/
 
 
 Mirza Anjum
