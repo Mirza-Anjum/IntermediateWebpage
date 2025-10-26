@@ -1,0 +1,268 @@
+:root {
+  --bg-light: #d8dbff;
+  --bg-dark: black;
+  --text-light: white;
+  --text-dark: #252427;
+  --accent: #040c65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  padding: 25px;
+}
+
+header h1 {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 380;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #3b428c;
+  flex-wrap: wrap;
+  position: sticky;
+  box-shadow: 0 4px 6px #020951;
+  font-size: 1.02rem;
+  gap: 20px;
+}
+
+nav a {
+  padding-top: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 50px;
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #acb1f7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px #020844;
+  transition: 0.5s;
+}
+
+section:hover {
+  transform: translateY(-6px);
+}
+
+section h1 {
+  color: var(--text-dark);
+  padding-bottom: 30px;
+  font-weight: 700;
+  margin: 15px;
+  color: var(--accent);
+}
+
+/* TO-DO LIST--- */
+.todocontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.todocontainer input {
+  width: 100%;
+}
+
+.todoitem {
+  background-color: rgba(22, 30, 176, 0.478);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 20px;
+  align-items: center;
+}
+
+.todoitem button {
+  background-color: rgb(254, 23, 69);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* IMAGE GALLERY----- */
+.gallerycontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.imgbox {
+  display: flex;
+  gap: 15px;
+}
+
+.imgbox input {
+  flex: 0.7;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px black;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* CONTACT FORM--- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+input:invalid, textarea:invalid{
+    border: 1px solid rgb(13, 0, 255);
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transform: 0.5s;
+}
+
+button:hover {
+  background-color: #5158a6;
+}
+
+.gendercontainer {
+  display: flex;
+  gap: 20px;
+}
+
+.dateofbirth {
+  display: flex;
+  gap: 10px;
+}
+
+.dateofbirth label {
+  padding: 10px 0;
+}
+
+.dateofbirth input {
+  flex: 1;
+  padding: 13px;
+}
+
+label {
+  font-size: 1.1em;
+  color: var(--accent);
+}
+
+.error {
+  color: crimson;
+  font-size: 0.9rem;
+}
+
+/* TOGGLE---- */
+#toggle {
+  margin: 8px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.darkmode {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.darkmode section {
+  background-color: #12142a;
+}
+
+.darkmode section h1 {
+  color: white;
+}
+
+.darkmode input,
+.darkmode textarea {
+  background-color: black;
+  color: white;
+  border-color: rgb(35, 12, 169);
+}
+
+.darkmode label {
+  color: white;
+}
+
+footer {
+  background-color: var(--accent);
+  padding: 20px;
+  color: white;
+}
+footer p {
+  padding: 8px;
+  font-size: 1.05rem;
+}

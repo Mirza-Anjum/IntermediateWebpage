@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2⃣ Intermediate Webpage🌐</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WEBFUSION🔗</h1>
+      <p>
+        This interactive web application combines a dynamic to-do list, an
+        engaging image gallery, and an easy-to-use contact form. It provides a
+        smooth and functional user experience.
+      </p>
+    </header>
+
+    <nav>
+      <a href="#todolist">To-Do List</a>
+      <a href="#imagegallery">Image Gallery</a>
+      <a href="#contactform">Contact Form</a>
+
+      <button id="toggle">Dark Mode ⏾</button>
+    </nav>
+
+    <main>
+      <section id="todolist">
+        <h1>🗒TO-DO LIST</h1>
+        <div class="todocontainer">
+          <input type="text" id="todoinput" placeholder="Enter your Task..." />
+          <button type="button" id="todobtn">Add Task</button>
+          <div id="todo"></div>
+        </div>
+      </section>
+
+      <section id="imagegallery">
+        <h1>🎞IMAGE GALLERY</h1>
+        <div class="gallerycontainer">
+          <div class="imgbox">
+            <input
+              type="text"
+              id="galleryinput"
+              placeholder="Enter Image URL..."
+            />
+            <button type="button" id="imgbtn">Add Image</button>
+          </div>
+          <div class="gallery" id="imglist"></div>
+        </div>
+      </section>
+
+      <section id="contactform">
+        <h1>☎ CONTACT FORM</h1>
+        <form id="contact">
+          <input type="text" id="name" placeholder="Enter Your Name" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <div class="gendercontainer">
+            <label><b>GENDER:</b></label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="Male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="other">Others</label>
+            <input type="radio" name="gender" id="other" value="other" />
+          </div>
+          <div class="dateofbirth">
+            <label for="dob"><b>DATE OF BIRTH:</b></label>
+            <input type="date" id="dob" required />
+          </div>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Enter your Message..."
+          ></textarea>
+          <button type="submit">Submit</button>
+          <p class="error" id="formerror"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Intermediate Webpage| Made with Love💖</p>
+      <p>MIRZA ANJUM</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
